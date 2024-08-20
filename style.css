@@ -1,0 +1,157 @@
+:root {
+    --navbar-padding: 5px;
+    --navbar-tabs-padding: 5px;
+    --navbar-roundness: 12px;
+    --navbar-tab-roundness: 6px;
+    --navbar-tabs-roundness: 10px;
+
+    --navbar-text-col: #ffffff;
+    --pages-text-col: #ffffff;
+
+    --pages-background-col: #151216;
+    --navbar-background-col: #221f23;
+    --navbar-tabs-col: #2f2c30;
+    --navbar-tab-active-col: #a9a4e8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--pages-background-col);
+    color: var(--pages-text-col);
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    background-color: var(--navbar-background-col);
+    color: var(--navbar-text-col);
+    border-radius: 0 0 var(--navbar-roundness) var(--navbar-roundness);
+    width: 100%;
+    position: relative; /* Ensure it stays at the top */
+    z-index: 1; /* Ensure it is above other content */
+    padding: var(--navbar-padding);
+}
+
+#navbar-text {
+    color: var(--navbar-text-col);
+    white-space: nowrap;
+    margin-right: 10px; /* Add some margin to separate from tabs */
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start; /* Align tabs to the left */
+    flex-grow: 1; /* Allow tabs to take all available space */
+    background-color: var(--navbar-tabs-col);
+    width: 100%; /* Ensure tabs take full width */
+    border-radius: var(--navbar-tabs-roundness); /* Add border-radius to tabs */
+    overflow: hidden; /* Ensure child elements respect the border-radius */
+    padding: var(--navbar-tabs-padding);
+}
+
+.tab {
+    color: var(--navbar-text-col);
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s, flex-grow 0.3s;
+    border-radius: var(--navbar-tab-roundness);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow tabs to grow equally */
+}
+
+.tab.active {
+    background-color: var(--navbar-tab-active-col);
+    flex-grow: 1.25; /* Active tab takes 25% more space */
+}
+
+.main-window {
+    flex: 1;
+    display: flex;
+    overflow: hidden; /* Hide scrollbar and prevent scrolling */
+    width: 100%;
+}
+
+.section {
+    min-width: 100vw;
+    height: calc(100vh - var(--navbar-padding) * 2); /* Adjust height to account for navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pages-background-col);
+}
+
+.content {
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+
+.navbar-icon {
+    height: 16px;
+    width: auto;
+    filter: var(--theme-active-icons);
+    pointer-events: none;
+}
+
+.nui-card {
+    padding: 25px;
+    background-color: var(--navbar-background-col);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nui-card.lim1 {
+    max-width: 75vw;
+}
+
+.nui-card.st1 {
+    background-color: var(--navbar-tabs-col);
+    border-radius: 8px;
+}
+
+.nui-button {
+    padding: 5px;
+    background-color: var(--navbar-tabs-col);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    transition-duration: 0.1s;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.nui-button:focus {
+    padding: 10px;
+    border-radius: 15px;
+    transition-duration: 0.1s;
+    background-color: var(--navbar-tab-active-col);
+    color: var(--navbar-tabs-col);
+}
