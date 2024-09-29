@@ -107,7 +107,7 @@ h1 {
 }
 
 .md-sys-button {
-    background-color: var(--md-sys-color-primary);
+    background-color: transparent;
     color: var(--md-sys-color-on-primary);
     padding: var(--md-ann-button-padding);
     border-radius: var(--md-ann-border-radius);
