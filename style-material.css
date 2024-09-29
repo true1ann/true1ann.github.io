@@ -1,0 +1,142 @@
+/* Mini MDY Library/Style. Made by @true1ann. https://ann.is-a.dev */
+
+:root {
+    --md-sys-color-primary: rgb(170 199 255);
+    --md-sys-color-surface-tint: rgb(170 199 255);
+    --md-sys-color-on-primary: rgb(10 48 95);
+    --md-sys-color-primary-container: rgb(40 71 119);
+    --md-sys-color-on-primary-container: rgb(214 227 255);
+
+    --md-sys-color-secondary: rgb(190 198 220);
+    --md-sys-color-on-secondary: rgb(40 49 65);
+    --md-sys-color-secondary-container: rgb(62 71 89);
+    --md-sys-color-on-secondary-container: rgb(218 226 249);
+
+    --md-sys-color-tertiary: rgb(221 188 224);
+    --md-sys-color-on-tertiary: rgb(63 40 68);
+    --md-sys-color-tertiary-container: rgb(87 62 92);
+    --md-sys-color-on-tertiary-container: rgb(250 216 253);
+
+    --md-sys-color-error: rgb(255 180 171);
+    --md-sys-color-on-error: rgb(105 0 5);
+    --md-sys-color-error-container: rgb(147 0 10);
+    --md-sys-color-on-error-container: rgb(255 218 214);
+
+    --md-sys-color-background: rgb(17 19 24);
+    --md-sys-color-on-background: rgb(226 226 233);
+    --md-sys-color-surface: rgb(17 19 24);
+    --md-sys-color-on-surface: rgb(226 226 233);
+
+    --md-sys-color-surface-variant: rgb(68 71 78);
+    --md-sys-color-on-surface-variant: rgb(196 198 208);
+
+    --md-sys-color-outline: rgb(142 144 153);
+    --md-sys-color-outline-variant: rgb(68, 71, 78);
+
+    --md-sys-color-shadow: rgb(0 0 0);
+    --md-sys-color-scrim: rgb(0 0 0);
+
+    --md-sys-color-inverse-surface: rgb(226 226 233);
+    --md-sys-color-inverse-on-surface: rgb(46 48 54);
+
+    --md-sys-color-inverse-primary: rgb(65 95 145);
+    --md-sys-color-primary-fixed: rgb(214 227 255);
+    --md-sys-color-on-primary-fixed: rgb(0 27 62);
+    --md-sys-color-primary-fixed-dim: rgb(170 199 255);
+    --md-sys-color-on-primary-fixed-variant: rgb(40 71 119);
+
+    --md-sys-color-secondary-fixed: rgb(218 226 249);
+    --md-sys-color-on-secondary-fixed: rgb(19 28 43);
+    --md-sys-color-secondary-fixed-dim: rgb(190 198 220);
+    --md-sys-color-on-secondary-fixed-variant: rgb(62 71 89);
+
+    --md-sys-color-tertiary-fixed: rgb(250 216 253);
+    --md-sys-color-on-tertiary-fixed: rgb(40 19 46);
+    --md-sys-color-tertiary-fixed-dim: rgb(221 188 224);
+    --md-sys-color-on-tertiary-fixed-variant: rgb(87 62 92);
+
+    --md-sys-color-surface-dim: rgb(17 19 24);
+    --md-sys-color-surface-bright: rgb(55 57 62);
+    --md-sys-color-surface-container-lowest: rgb(12 14 19);
+    --md-sys-color-surface-container-low: rgb(25 28 32);
+    --md-sys-color-surface-container: rgb(29 32 36);
+    --md-sys-color-surface-container-high: rgb(40 42 47);
+    --md-sys-color-surface-container-highest: rgb(51 53 58);
+
+    --md-ann-border-radius: 24px;
+    --md-ann-padding: 24px;
+    --md-ann-button-padding: 10px;
+    --md-ann-button-gap: 6px;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    font-family: Roboto;
+    background-color: var(--md-sys-color-background);
+    color: var(--md-sys-color-on-background);
+    padding: 0;
+    overflow: auto;
+}
+
+
+h1 {
+    margin: 0;
+    margin-bottom: var(--md-ann-padding);
+}
+
+.md-sys-card {
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    border-radius: var(--md-ann-border-radius);
+    padding: var(--md-ann-padding);
+    margin: var(--md-ann-padding);
+}
+
+.md-sys-warn {
+    background-color: var(--md-sys-color-error);
+    color: var(--md-sys-color-on-error);
+    border-radius: var(--md-ann-border-radius);
+    padding: var(--md-ann-padding);
+    margin: var(--md-ann-padding);
+}
+
+.md-sys-button {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    padding: var(--md-ann-button-padding);
+    border-radius: var(--md-ann-border-radius);
+    display: inline-block;
+    margin: var(--md-ann-button-gap);
+    transition-duration: 0.3s;
+}
+
+.md-sys-button:hover {
+    background-color: var(--md-sys-color-primary-container);
+}
+
+.md-sys-button:first-child {
+    margin-left: 0;
+}
+
+.md-sys-button img {
+    height: 50%;
+    width: auto;
+}
+
+.md-sys-footer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the children */
+    background-color: transparent;
+    border-radius: var(--md-ann-border-radius) var(--md-ann-border-radius) 0 0;
+    border: 1px solid var(--md-sys-color-surface-variant);
+    box-sizing: border-box;
+    padding: var(--md-ann-padding);
+    margin: var(--md-ann-padding);
+    margin-bottom: 0;
+}
