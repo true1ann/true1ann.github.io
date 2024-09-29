@@ -3,75 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ann's Web</title>
+    <title>Ann's web (v2.1)</title>
+    <link rel="stylesheet" href="style-material.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="md-sys-card">
+        <h1 id="header">Enable JavaScript, please.</h1>
+        welcome, $USER. this is ANNWEB.
+    </div>
 
-    <div class="nav-bar">
-        <div id="navbar-text">AW</div>
-        <div class="tabs" id="tabs">
-            <div class="tab" data-index="0">Hi</div>
-            <div class="tab" data-index="1">Who?</div>
-            <div class="tab" data-index="2">Socials</div>
-            <div class="tab" data-index="3">Tasks</div>
+    <div class="md-sys-warn">
+        <h1>Warning</h1>
+        Any .anet resource wont open, reason: https:// system is not complete.
+    </div>
+
+    <div class="md-sys-card">
+        <h1>Site Mirrors</h1>
+        <div class="mirror pub md-sys-button">
+            Public (.is-a.dev)<br>
+        </div>
+        <div class="mirror onion md-sys-button">
+            Onion (.onion)<br>
+        </div>
+        <div class="mirror anet md-sys-button">
+            ANet (.anet)<br>
         </div>
     </div>
 
-    <div class="main-window" id="mainWindow">
-        <div class="section" id="welcome">
-            <div class="content"><div>
-                <h1>Hello!</h1><br>
-                <h2>You entered Ann's web.</h2><br>
-                <div class="nui-card">
-                    Hello, on top you have navigation panel.<br>
-                    You can use it to switch between sections.
-                </div></div>
-            </div>
+    <div class="md-sys-card">
+        <h1> Who am I?</h1>
+        My name is Ann, I draw an code<br>
+        I love F(L)OSS and DarkWeb.<br>
+        <br>
+        I am also AKA 'Annie', 'ᐷᐱᐱ' or just 'ᐷ'.<br>
+
+        I'm transfem, and I speak on EN, JP(soon), RU<br>
+    </div>
+
+    <div class="md-sys-card">
+        <h1>Contacts</h1>
+        <div class="invite discord md-sys-button">
+            Discord (server)<br>
         </div>
-        <div class="section" id="whoami">
-            <div class="content"><div>
-                <div class="nui-card">
-                    <h2>Who am I?</h2><br>
-                    I am a Developer<br>
-                    I am an Artist<br>
-                    Darkweb enthusiast<br>
-                    I love FLOSS
-                </div>
-            </div></div>
+        <div class="invite matrix md-sys-button">
+            Matrix (user)<br>
         </div>
-        <div class="section" id="social">
-            <div class="content"><div>
-                <div class="nui-card">
-                    <h2>Social Media</h2>
-                </div><br>
-                <div class="nui-card lim1">
-                    <a class="nui-button" href="https://discord.com/invite/n8WvR8Be9w">Discord server</a>
-                    <a class="nui-button" href="https://t.me/true1ann">Telegram</a>
-                    <a class="nui-button" href="https://github.com/true1ann">Github</a>
-                    <a class="nui-button" href="https://x.com/true1ann">X/Twitter</a>
-                    <a class="nui-button" href="https://the.gayest.dev/@true1ann">Fediverse</a>
-                </div><br>
-                <div class="nui-card lim1">
-                    These services dont have a link.<br>I'm sorry.<br>
-                    <br><div class="nui-card st1">
-                        Matrix: @true1ann:matrix.org
-                    </div>
-                </div>
-            </div></div>
+        <div class="invite fedi md-sys-button">
+            Fediverse (user)<br>
         </div>
-        <div class="section" id="projects">
-            <div class="content"><div>
-                <div class="nui-card">
-                    <h2>Tasks/Projects</h2><br>
-                    <div class="nui-card st1">
-                        Soon. I didnt fully recovered yet..
-                    </div>
-                </div><br>
-            </div></div>
+        <div class="invite xtwitter md-sys-button">
+            XTwitter (user)<br>
+        </div>
+        <div class="invite telegram md-sys-button">
+            Telegram (user)<br>
+        </div>
+        <div class="invite github md-sys-button">
+            GitHub (user)<br>
+        </div>
+        <div class="invite gitanet md-sys-button">
+            git.asper (user)<br>
         </div>
     </div>
 
+    <div class="md-sys-card">
+        <h1>Projects</h1>
+        <div class="project crst md-sys-button">
+            Creative Studio<br>
+        </div>
+        <div class="project anet md-sys-button">
+            AsperNetwork<br>
+        </div>
+        <div class="project self md-sys-button">
+            This WebSite<br>
+        </div>
+        <div class="project awalls md-sys-button">
+            AWalls (exclusive)<br>
+        </div>
+    </div>
+
+    <div class="md-sys-card">
+        <h1>Credits</h1>
+        MiniMDY by: @true1ann<br>
+        Hosting: GitHub Pages<br>
+        Public Address: is-a.dev<br>
+        Onion Address: Tor project<br>
+        ANet Address: Asper<br>
+    </div>
+
+    <div class="md-sys-footer">
+        <div class="right">Thank you for visiting! :3</div>
+        <div class="left"><span id="footer"></span></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
